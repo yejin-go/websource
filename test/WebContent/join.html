@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register.jsp" method="post">
+      <fieldset>
+        <legend>필수사항</legend>
+        <div>
+        	<input type="hidden" name="age" value="3" />
+        </div>
+          <div>
+            <label for="">이름</label>
+            <input type="text" name="name"/>
+          </div>
+          <div>
+            <label for="">이메일</label>
+            <input type="email" name="" id="email" />
+          </div>
+          <div>
+            <label for="">비밀번호</label>
+            <input type="password" size="30" />
+          </div>        
+      </fieldset>
+      <fieldset>
+      	 <legend>부가 입력 사항</legend>
+        <div>
+          <label for="">거주지를 선택해 주세요</label>
+        </div>
+        <div>
+          <select name="residence" id="">
+            <option value="서울시">서울시</option>
+            <option value="경기도">경기도</option>
+            <option value="전라도">전라도</option>
+            <option value="경상도">경상도</option>
+            <option value="충청도">충청도</option>
+            <option value="강원도">강원도</option>
+            <option value="제주도">제주도</option>
+          </select>
+        </div>
+        <div>
+          <label for="">취미</label>
+          <input type="checkbox" name="hobby" id="" />여행
+          <input type="checkbox" name="hobby" id="" />독서 또는 영화감상
+        </div>
+        <div>
+          <label for="">성별</label>
+          <input type="radio" name="gender" id="" />남성
+          <input type="radio" name="gender" id="" />여성
+        </div>     
+        <div>
+          <label for="">사진을 등록해 주세요</label>
+          <input type="file">
+        </div>       
+       
+        <div>
+          <label for="">방문 경로를 말씀해 주세요</label>
+        </div>
+        <div>
+          <textarea name="" id="" cols="30" rows="10"> </textarea>
+        </div>
+       </fieldset>    
+      <input type="submit" value="회원가입" />
+      <input type="reset" value="재작성" />
+      <input type="button" value="전송" />
+    </form>
+  </body>
+</html>
